@@ -1,15 +1,12 @@
 import { Card } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faAmazon } from "@fortawesome/free-brands-svg-icons"
-import { faInstagram } from "@fortawesome/free-brands-svg-icons"
-import { faXTwitter } from "@fortawesome/free-brands-svg-icons"
-import { faFacebook } from "@fortawesome/free-brands-svg-icons"
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { faAmazon, faInstagram, faXTwitter, faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+
 
 const FooterPage = () => {
     
     return (
-        <Card className="text-center bg-dark text-light">
+        <Card style={{backgroundColor: "#000000", color: "#fff"}}>
         <Card.Body>
           <Card.Title>Follow us here: </Card.Title>
           <Card.Text className="font-weight-bold">

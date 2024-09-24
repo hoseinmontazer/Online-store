@@ -6,7 +6,7 @@ import Nav from './components/Nav';
 import Cart from './pages/cart/Cart';
 import Shop from './pages/shop/Shop';
 import { ShopContextProvider } from './context/ShopContext';
-import FooterPage from './components/data/FooterPage';
+import FooterPage from './components/FooterPage';
 
 function App() {
 
