@@ -6,6 +6,7 @@ import Nav from './components/Nav';
 import Cart from './pages/cart/Cart';
 import Shop from './pages/shop/Shop';
 import { ShopContextProvider } from './context/ShopContext';
+import FooterPage from './components/data/FooterPage';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
         </Routes>
         </ShopContextProvider>
+        <FooterPage />
       </Router>
     </div>
   )
