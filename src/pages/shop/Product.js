@@ -8,13 +8,13 @@ const Product = (props) => {
 
     const isInCart = cartItems?.some((item)=> item.id === id)
     return (
-        <div className="col-4 px-5 py-3">
-            <img src={productImage} alt="plant" />
+        <div className="col-12 col-md-4 p-md-5 p-3">
+            <img src={productImage} alt="plant" className="img-fluid" />
             <h5 className="pt-2">{productName}</h5>
             <p>price: {price}$</p>
-            <button className="btn btn-info btn-sm" onClick={()=> addToCart(id)}>+</button>
+            <button className="btn btn-dark btn-sm" onClick={()=> addToCart(id)}>+</button>
             <span className="mx-1">{cartItems?.filter((row)=> row.id === id)[0]?.count}</span>
-            {isInCart && <button className="btn btn-info btn-sm" onClick={()=> removeFromCart(id)}>-</button>}
+            {isInCart && <button className="btn btn-dark btn-sm" onClick={()=> removeFromCart(id)}>-</button>}
         </div>
     )
 
