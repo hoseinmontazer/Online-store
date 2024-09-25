@@ -21,7 +21,7 @@ const Nav = () => {
            <li className="nav-item">
               <Link to="/cart" className="nav-link">
                 <FontAwesomeIcon icon={faShoppingCart} />
-                <span className="cart-items-count">{itemsCount}</span>
+                {itemsCount > 0 && <span className="cart-items-count">{itemsCount}</span>}
               </Link>
            </li>
         </ul>
