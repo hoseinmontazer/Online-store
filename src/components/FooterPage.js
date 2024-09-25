@@ -3,25 +3,25 @@ import { faAmazon, faInstagram, faXTwitter, faFacebook, faLinkedin } from "@fort
 
 const FooterPage = () => {
   return (
-    <footer className="navbar navbar-dark bg-dark navbar-expand-lg overflow-hidden">
-      <div className="container d-flex flex-column align-items-center overflow-hidden">
+    <footer className="navbar navbar-dark bg-dark navbar-expand-lg">
+      <div className="container d-flex flex-column align-items-center">
         <span className="navbar-brand mb-3">Follow us here:</span>
-        <ul className="navbar-nav d-flex flex-row justify-content-center"  style={{color: "#fff"}}>
-          <li className="nav-item mx-3">
+        <ul className="navbar-nav d-flex flex-row justify-content-center" >
+          <a href="https://www.amazon.com/" className="nav-item mx-3">
             <FontAwesomeIcon icon={faAmazon} />
-          </li>
-          <li className="nav-item mx-3">
+          </a>
+          <a href="https://www.instagram.com/" className="nav-item mx-3">
             <FontAwesomeIcon icon={faInstagram} />
-          </li>
-          <li className="nav-item mx-3">
+          </a>
+          <a href="https://twitter.com/" className="nav-item mx-3">
             <FontAwesomeIcon icon={faXTwitter} />
-          </li>
-          <li className="nav-item mx-3">
+          </a>
+          <a href="https://www.facebook.com/" className="nav-item mx-3">
             <FontAwesomeIcon icon={faFacebook} />
-          </li>
-          <li className="nav-item mx-3">
+          </a>
+          <a href="https://www.linkedin.com/" className="nav-item mx-3">
             <FontAwesomeIcon icon={faLinkedin} />
-          </li>
+          </a>
         </ul>
         <span className="navbar-text text-light mt-3">
           © 2024 Copyright Alright Recived
