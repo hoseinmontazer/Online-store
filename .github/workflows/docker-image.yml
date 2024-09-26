@@ -15,4 +15,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      run: |
+           docker rm -f osz
+           docker build . --file Dockerfile --tag osz
+           docker run -p 3010:80 --name osz -d osz
+           
