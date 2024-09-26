@@ -7,7 +7,7 @@ import './Nav.css'
 
 const Nav = () => {
   const {cartItems} = useContext(ShopContext)
-  const itemsCount = cartItems.reduce((prev, current) => {
+  const itemsCount = cartItems?.reduce((prev, current) => {
     return prev + current.count
   },0)
   return (
