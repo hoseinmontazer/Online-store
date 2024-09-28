@@ -23,7 +23,7 @@ const FooterPage = () => {
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </ul>
-        <span className="navbar-text text-light mt-0">
+        <span className="navbar-text text-light py-2 my-0">
           © 2024 Copyright Alright Recived
         </span>
       </div>

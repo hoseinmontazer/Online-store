@@ -8,15 +8,15 @@ const Product = (props) => {
 
     const isInCart = cartItems?.some((item)=> item.id === id)
     return (
-        <div className="col-12 col-md-4 p-md-5 p-3 m-b5">
+        <div className="col-12 col-md-4 p-md-5 p-3">
             <img src={productImage} alt="plant" className="img-fluid" />
-            <h5 className="pt-2">{productName}</h5>
+            <h5 className="py-1">{productName}</h5>
             <p>price: {price}$</p>
-            <button className="btn btn-dark btn-sm" onClick={()=> addToCart(id)}>+</button>
+            <button className="btn btn-dark btn-sm" onClick={()=> addToCart(id, price)}>+</button>
             <span className="mx-1">{cartItems?.filter((row)=> row.id === id)[0]?.count}</span>
             {isInCart && <button className="btn btn-dark btn-sm" onClick={()=> removeFromCart(id)}>-</button>}
         </div>
     )
 
 }
-export default Product
+export default Product  
