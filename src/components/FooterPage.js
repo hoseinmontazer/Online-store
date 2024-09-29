@@ -3,9 +3,9 @@ import { faAmazon, faInstagram, faXTwitter, faFacebook, faLinkedin } from "@fort
 
 const FooterPage = () => {
   return (
-    <footer className="bg-dark p-3 fixed-bottom">
+    <footer className="footer bg-dark fixed-bottom">
       <div className="container d-flex flex-column align-items-center">
-        <div className="navbar-nav d-flex flex-row justify-content-center" >
+        <div className="navbar-nav d-flex flex-row justify-content-center p-1" >
           <a href="https://www.amazon.com/" className="nav-item mx-3">
             <FontAwesomeIcon icon={faAmazon} />
           </a>
