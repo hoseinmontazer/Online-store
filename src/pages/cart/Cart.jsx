@@ -12,10 +12,10 @@ const Cart = () => {
   const hasItemsInCart = cartItems?.some((item) => item.count > 0);
 
   return (
-    <div className="cartContainer d-flex flex-column flex-lg-row" style={{ maxHeight: "92vh" }}>
+    <div className="cartContainer d-flex flex-column flex-lg-row" style={{ maxHeight: "87vh" }}>
       {/* Main content area */}
       <div className={`productPages ${hasItemsInCart ? "col-lg-10" : "col-12"}`} style={{ overflowX: "hidden" }}>
-        <div className="row px-5 mb-5 text-center">
+        <div className="row px-5 mb-3 text-center">
           {Products.map((p) => {
             if (cartItems?.some((i) => i.id === p.id && i.count > 0))
               return <Product key={p.id} data={p} />;

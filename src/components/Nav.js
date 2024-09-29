@@ -11,7 +11,7 @@ const Nav = () => {
     return prev + current.count
   },0)
   return (
-    <div className="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+    <div className="navbar navbar-dark bg-dark navbar-expand-lg">
       <div className="container">
         <a className="navbar-brand"> Garden Shopping</a>
         <ul className="navbar-nav">
