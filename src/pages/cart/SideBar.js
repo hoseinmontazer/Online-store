@@ -19,7 +19,7 @@ const SideBar = () => {
         <div className="sidebar p-3 text-left">
             <h2>Total Price: {total}$</h2><br />
             <h6>Delivery Friday, October 11</h6>
-            <h6>Or fastest delivery Tuesday, October 8</h6><br />
+            <h6>fastest delivery Tuesday, October 8</h6>
             <h4 className="text-success">In Stock</h4>
 
             <div className="additional-info mt-2">
