@@ -8,6 +8,7 @@ This is an online store web application built using React.js. It's designed to s
 - Homepage displaying various plants and garden-related products
 - Product page with detailed information about each item
 - Shopping cart functionality to add and remove items
+- Total price calculation in the shopping cart
 - Built with React.js, a popular JavaScript library for building user interfaces
 
 ## Tech Stack

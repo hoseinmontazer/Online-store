@@ -10,7 +10,8 @@ const Products = [
         id: 1,
         productName: "Aglaonema",
         price: 50,
-        productImage: Aglaonema
+        productImage: Aglaonema,
+        key: "index.id"
     },
     {
         id: 2,
