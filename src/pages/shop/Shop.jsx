@@ -5,8 +5,8 @@ import "../../App.css"
 const Shop =() => {
 
     return(
-        <div>
-            <div className="row mb-5" style={{textAlign: "center"}}>
+        <div style={{textAlign: "center", overflow:"auto", boxSizing:"border-box",maxHeight:"92vh", overflowX:"hidden"}}>
+            <div className="row my-5" >
                 {Products.map((productData) => <Product key={productData.id} data={productData} />)}
             </div>
         </div>
