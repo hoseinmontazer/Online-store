@@ -8,7 +8,7 @@ const Product = (props) => {
 
     const isInCart = cartItems?.some((item)=> item.id === id)
     return (
-        <div className="col-12 col-md-4 p-md-5 p-3">
+        <div className="col-12 col-md-4 col-lg-4 p-md-5 p-3">
             <img src={productImage} alt="plant" className="img-fluid" />
             <h5 className="py-1">{productName}</h5>
             <p>price: {price}$</p>

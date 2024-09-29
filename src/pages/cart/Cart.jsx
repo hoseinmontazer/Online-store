@@ -12,7 +12,7 @@ const Cart = (
     const TempItem = (
     ) => {
         var subtotal = 0;
-        cartItems?.forEach((item) => subtotal += item.count * item.price);
+        cartItems?.map((item) => subtotal += item.count * item.price);
         setTotal(subtotal);
     };
 
@@ -21,7 +21,7 @@ const Cart = (
     }, [cartItems]);
 
     return (
-        <div style={{ overflow: "auto", maxHeight: "95vh" }}>
+        <div className="productPages" style={{ maxHeight:"92vh" }}>
             <div className="row px-5 mb-5 text-center">
                 {Products.map((p) => {
                     if (cartItems?.some((i) => i.id === p.id && i.count > 0))
@@ -29,7 +29,7 @@ const Cart = (
                 })}
             </div>
             <div className="row text-center mb-5">
-                <h2>Your total price: {total}$</h2>
+                <h2 className="text-center">Your total price: {total}$</h2>
             </div>
         </div>
     );
