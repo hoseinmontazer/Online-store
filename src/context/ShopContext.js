@@ -16,20 +16,10 @@ export const ShopContextProvider = (props) => {
     },[cartItems])
 
 
-    // const TotalPrice = () => {
-    //   setCartItems( cartItems.reduce((prev,currenPrice)=>{
-    //     console.log(prev, currenPrice);
-    //     if (prev.price) {
-    //         return prev.price + currenPrice
-    //     }
-    //     return prev.price + currenPrice
-    // }))
-    //   }
-
     const addToCart = (itemId, itemPrice) => {
         console.log(itemPrice)
         if (!cartItems?.find((item) => item.id === itemId)){
-            setCartItems([...cartItems, { id: itemId, count: 1 , price: itemPrice}])
+            setCartItems([...cartItems, { id: itemId, count: 1}])
         }else
             setCartItems(cartItems.map((item) => {
                 if (item.id === itemId)
