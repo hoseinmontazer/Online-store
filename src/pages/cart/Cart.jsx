@@ -12,16 +12,15 @@ const Cart = () => {
   const hasItemsInCart = cartItems?.some((item) => item.count > 0);
 
   return (
-    <div className="cartContainer d-flex flex-column flex-lg-row" style={{ maxHeight: "87vh" }}>
+    <div className="cartContainer d-flex flex-column flex-lg-row">
       {/* Main content area */}
-      <div className={`productPages ${hasItemsInCart ? "col-lg-10" : "col-12"}`} style={{ overflowX: "hidden" }}>
-        <div className="row px-5 mb-3 text-center">
+      <div className={`productPages ${hasItemsInCart ? "col-lg-10" : "col-12"}`}>
+        <div className="row px-5 m-5 text-center justify-content-center align-items-center">
           {Products.map((p) => {
             if (cartItems?.some((i) => i.id === p.id && i.count > 0))
               return <Product key={p.id} data={p} />;
           })}
-          {/* Display a message if the cart is empty */}
-          {!hasItemsInCart && (
+                   {!hasItemsInCart && (
             <div className="col-12">
               <h2 className="text-center mt-5">Your cart is currently empty.</h2>
             </div>
@@ -29,7 +28,6 @@ const Cart = () => {
         </div>
       </div>
 
-      {/* Sidebar will only be shown if there are items in the cart */}
       {hasItemsInCart && <SideBar />}
     </div>
   );

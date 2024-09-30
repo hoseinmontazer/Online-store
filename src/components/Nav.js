@@ -4,6 +4,7 @@ import { faShoppingCart } from "@fortawesome/free-solid-svg-icons/faShoppingCart
 import { useContext } from "react";
 import { ShopContext } from "../context/ShopContext";
 import './Nav.css'
+import { faLeaf } from "@fortawesome/free-solid-svg-icons";
 
 const Nav = () => {
   const {cartItems} = useContext(ShopContext)
@@ -13,7 +14,7 @@ const Nav = () => {
   return (
     <div className="navbar navbar-dark bg-dark navbar-expand-lg">
       <div className="container">
-        <a className="navbar-brand"> Garden Shopping</a>
+        <a className="navbar-brand text-white rounded p-1"><FontAwesomeIcon icon={faLeaf}/> Garden Shop</a>
         <ul className="navbar-nav">
            <li className="nav-item">
               <Link to="/" className="nav-link">Shop</Link>

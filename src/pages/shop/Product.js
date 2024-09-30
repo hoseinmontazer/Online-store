@@ -9,7 +9,7 @@ const Product = (props) => {
     const isInCart = cartItems?.some((item)=> item.id === id)
     return (
         <div className="col-12 col-md-4 col-lg-4 p-5">
-            <img src={productImage} alt="plant" className="img-fluid" />
+            <img src={productImage} className="cart-item-image img-fluid" alt="plant" />
             <h5 className="py-1">{productName}</h5>
             <p>price: {price}$</p>
             <button className="btn btn-dark btn-sm" onClick={()=> addToCart(id, price)}>+</button>

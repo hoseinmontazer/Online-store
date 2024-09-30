@@ -1,4 +1,4 @@
-# Garden Shopping - An Online Store Built with React 🌱
+# Garden Shop - An Online Store Built with React 🌱
 
 This is an online store web application built using React.js. It's designed to showcase plants and garden-related items for purchase. The website includes a homepage featuring various plants, a product page with detailed information about each product, and a shopping cart for adding and removing items.
 
