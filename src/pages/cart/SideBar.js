@@ -16,7 +16,8 @@ const SideBar = () => {
 
     return (
 
-        <div className="sidebar flex flex-1 col-lg-2 mb-5 p-20 text-left ">
+      <div>
+          <div className="card mb-5 p-20 text-left ">
             <h2>Total Price: {total}$</h2><br />
             <h6>Delivery Friday, October 11</h6>
             <h6>fastest delivery Tuesday, October 8</h6><br />
@@ -34,6 +35,7 @@ const SideBar = () => {
                 Buy now
             </button>
         </div>
+      </div>
     )
 }
 export default SideBar
